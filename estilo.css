@@ -1,0 +1,356 @@
+/* Definicoes de estilo para o corpo da pagina*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.67;
+    margin: 0;
+    padding:0;
+    background-color: #f4f4f4;
+}
+/* Estilo para os cabecalhos */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+h3 {
+    margin: 10px 0;
+    color: #666;
+}
+/* Estilo para links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+.fonte-family {
+    font-family: "corier New";
+}
+.fonte-tamanho {
+    font-weight: 600;
+}
+.fonte-estilo {
+    font-style: italic;
+}
+.texto-cor {
+    color: #0088cc;
+}
+.texto-centralizado {
+    text-align: center;
+}
+.texto-sublinhada {
+    text-transform: uppercase;
+}
+.texto-maiusculas {
+    text-transform: uppercase;
+}
+.sombra-texto {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.espacamento-letras {
+    word-spacing: 14px;
+}
+/*  Isto e um comentario simplkes em css */
+/*
+este e um comentario
+de multiplas linhas
+em CSS
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.destaque {
+    background-color: yellow;
+    font-weight: bold;
+} 
+.texto-grande {
+    font-size: 24px;
+}
+.texto-azul {
+    color: blue;
+}
+#cabecalho-principal {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* seletor universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 5px;
+}
+a[href^="http"] {
+    color: red;
+}
+div[data-status="ativo"] {
+    background-color: green;
+}
+/* Especialidade (0,0,0,1) */
+h4 {
+    color: red;
+}
+/* Especialidade (0,0,1,0) */
+.specialidade-header {
+    color: red !important;
+}
+.text-azul {
+    color: red !important;
+}
+.text-azul {
+    color: blue;
+}
+.paragrafos-absoluto {
+font-size: 16px;
+}
+.paragrafos-ponto {
+    font-size: 12pt;
+}
+.caixa-polegada {
+    width: 2in;
+    height: lin;
+    border: 1px solid black;
+}
+.caixa-centimetro {
+    width: 5cm;
+    height: 2cm;
+    border: 1px solid red;
+}
+.caixa-milimetro {
+    width: 50mm;
+    height: 2cm;
+    border: 1px solid green;
+}
+.conteiner {
+    font-size: 20px; /* Tamanho da fonte para o elemento pai*/
+}
+.texto-em {
+    font-size: 1.5em; /* 150% do tamanho da fonte do elemento pai, oun seja, 30px*/
+}
+html {
+    font-size: 16px; /* Define o tamanho da fonte padrao para a pagina */
+}
+.texto-rem {
+    font-size: 2rem; /* 200% do tamanho da fonte do elemento raiz, ou seja, 32px */
+}
+.container {
+    width: 500px; /* largura do elemento pai */
+}
+.caixa-percentual {
+    width: 50%; /* 50% da largura do seu  elemento pai, ou seja, 250px */
+    background-color: lightblue;
+}
+.div-vw {
+    width: 80vw; /* 80% da largura da viewport */
+    background-color: lightcoral;
+}
+.cor-rgb {
+    color: rgb(255, 0, 0); /* Vermelho */
+    background-color: rgba(0, 0, 255, 0.5); /* Azuk com 50% de opacidade */
+}
+.cor-rgb {
+    color: #00ff00; /* Verde */
+    background-color: rgb #f00; /* vermelho */
+}
+.cor-hsl {
+    color: hsl(120, 100%, 25%); /* Verde escuro */
+    background-color: hsla(240, 100%, 50%, 0.3); /* Azul com 30% de opacidade*/
+}
+.fundo-imagem {
+    background-image: url("https://static.vecteezy.com/ti/fotos-gratis/t1/22653879-fantasia-ilha-com-cachoeiras-3d-ilustracao-elementos-do-isto-imagem-mobiliado-de-nasa-generativo-ai-gratis-foto.jpg");
+    height: 300px;
+    width: 100%;
+}
+.fundo-tamanho {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSknS9XBN_xYlrwQszz68wG_AAYidbcfu3e5g&s");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+.fundo-posicao {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJFr_dM-3IFMPkBh-2C9pETZ0jz6GLashpQ&s");
+    background-size: cover; /* Centralizar a imagem de fundo */
+    height: 300px;
+    width: 100%;
+}
+.fundo-repetir {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL67Jpssb5RMwyRh0ePALPOlIZwzamioaZHA&s");
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    height: 100px;
+    width: 100%;
+}
+.caixa {
+    width: 200px; /* Define a largura da caixa */
+    height: 100px; /* Define a altura da caixa */
+    background-color: lightblue; /* Cor de fundo pra visualizacao */
+}
+.container {
+    width: 50%; /* A largura é definida como 50% da largura do elemento pai */
+}
+.caixa-relativa {
+    width: 80%; /* A largura é 80% da largura do seu elemento pai (.container)*/
+    height: 50vh; /* A altura é 50% da altura da viewport */
+    background-color: lightcoral; /* Cor de fundo para visualizacao*/
+}
+
+.espaco-uniforme {
+ width: 100px;
+height: 100px;
+background-color: #ffd700; /* Dourado */ 
+margin: 15px; /* Margem uniforme */
+} 
+
+.margem-topo { 
+    margin-top: 10px;
+}
+.margem-direita { 
+    margin-right: 20px;
+}
+.margem-baixo {
+margin-bottom: 30px;
+}
+.margem-esquerda {
+margin-left: 40px;
+}
+.margem-colapso { 
+    margin-bottom: 15px;
+}
+.margem-negativa {
+margin-top: -30px;
+background-color: #dc143c; /* Carmesim */
+}
+.borda-simples {
+border-style: solid; /* Estilo da borda */
+border-width: 2px; /* Largura da borda */
+border-color: #0000ff; /* Cor da borda */
+}
+
+.borda-individual {
+    border-top: 4px dotted red; /* Borda superior pontilhada vermelho */
+    border-right: 3px dashed green; /* Borda direta tracejada verde */
+    border-bottom: 2px solid blue; /* borda inferior solida azul */
+    border-left: 5px double orange; /* Borda esquerda dupla laranja*/ 
+}
+.borda-arredondada {
+    border: 3px solid #8a2be2; /* Borad solida cor de beterraba */
+    border-radius: 10px; /* Raio da borda para arredondar os cantos */
+}
+.borda-efeito {
+    border: 2px solid #8a2be2; /* borda solida cor de beterraba */
+    border-radius: 50%; /* criar uma forma circular */
+    width: 100px;
+    height: 100px;
+}
+.caixa-padding {
+    padding: 20px; /* Aplica um padding uniforme de 20px em todos os lados */
+    background-color: #ff6347; /* tomate */
+}
+.padding-individual {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    background-color: #4682b4; /* Azul aço*/
+}
+.padding-relativo {
+    padding: 2em; /* O padding e baseado no tamanho da fonte do elemento*/
+    background-color: #32cd32; /* Verde lima */
+}
+.block-elemento {
+    display: block;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+﻿
+
+.inline-elemento {
+display: inline;
+background-color: ☐lightcoral;
+color: white;
+padding: 5px;
+margin-right: 5px; /* Aplica margem à direita para separar elementos inline adjacentes */
+}
+.inline-block-elemento {
+display: inline-block;
+background-color: lightgreen;
+color: white;
+width: 100px; /* Define a largura do elemento */
+height: 100px; /* Define a altura do elemento */
+text-align: center;
+line-height: 100px; /* Centraliza verticalmente o texto */
+margin: 10px; /* Espaçamento entre elementos inline-block adjacentes */
+}
+.esconder-elemento {
+display: none;
+}
+.escondido {
+visibility: hidden;
+}
+.visivel {
+visibility: visible;
+}
+﻿ 
+elemento-static {
+/* position: static; é o padrão, portanto, geralmente não é necessário declará-lo */ 
+border: 2px solid blue;
+margin: 5px;
+}
+.elemento-relativo {
+position: relative;
+top: 10px; /* Desloca o elemento 10px para baixo a partir de sua posição original */ left: 20px; /* Desloca o elemento 20px para a direita a partir de sua posição original */ 
+border: 2px solid green;
+}
+.contaier-relativo {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.elemento-absoluto {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: coral;
+
+}
+.cabecalho-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    background-color: darkcyan;
+    padding: 10px;
+    color: white;
+    text-align: center;
+
+}
+.index-conteiner {
+    position: relative;
+}
+.fundo {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 60px;
+    top: 50px;
+    background-color: lightcyan;
+}
+
+.frente {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50px;
+    top: 50px;
+    background-color: lightcyan;
+    z-index: 2;
+}

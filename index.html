@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>CSS basico</title>
+ <!-- CSS no head -->
+ <style>
+ body {
+  background-color: lightblue;
+ }  
+ h1 {
+  color: navy;
+    margin-left: 20px;
+ }
+</style>
+<!-- CSS externo -->
+<link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <!-- CSS inline -->
+  <p style="color: green; font-size:14px">
+    este paragrafo sera exibido em verde e com tamanho de fonto 14px.
+</p>
+
+<!-- CSS no head -->
+<h1>este e um titulo com CSS interno</h1>
+<p>este paragrafo esta em uma pagina com fundo aul claro.</p>
+
+<!-- CSS externo -->
+<h2>bem-vindoa minha pagina</h2>
+<h3>
+  este e um exemplo de como utilizar CSS externo para estilizar sua pagina.
+  </h3>
+  <a href="https://ww.google.com">visite o google</a>
+
+  <!-- propriedades de fonte -->
+  <p class="fonte-family">este texto utiliza a fonte courier new.</p>
+
+  <p class="fonte-tamanho">
+   este texto tem um tamanho de fonte de 20 pixels.
+   </p>
+
+   <p class="fonte-peso">este texto tem uma espessura de fonte de 600.</p>
+
+   <p class="fonte-estilo">esse texto e exibido em italico.</p>
+
+   <p class="texto-cor">este texto e exibido na cor azul.</p>
+
+   <p class="texto-centralizado">este texto e centralizado.</p>
+
+   <p class="texto-sublinhado">este texto e sublinhado.</p>
+
+   <p class="texto-maiusculas">este texto e transformado em maiusculas.</p>
+
+   <P class="sombra-texto>"
+    este textopossui sombra, adicionando profundidade.
+   </p>
+
+   <P class="esoacamento-letras">espacamento personalizado entre letras.</p>
+
+   <p class="espacamento-palavras">espacamento aumentado entre palavras.</P>
+
+   <!-- seletor de tipo/tag -->
+   <ul>
+     <li>item 1</li>
+     <li>item 2</li>
+    </ul>
+<!-- este exemplo e de um recurso mais avancados, que veremos ao longo ddo ebook -->
+<div  class="cabecalho-sticky">cabecalho sticky</div>
+
+<!-- seletor por classe -->
+<p class="destaque">este paragrafo sera destacado.</p>
+
+<p>este paragrafo nao sera destacado.</p>
+
+<p class="destaque">este paragrafo sera destacado.</p>
+
+<p class="fonte-tamanho">
+    Este texxto tem um tamanho de fonte de 20 pixels.
+</p>
+
+<p class="fonte-peso">Este texto tem uma espessura de fonte de 600.</p>
+
+<p class="fonte-estilo">Este texto é exibido em itálico.</p>
+
+<p class="texto-cor">Este texto é exibido na cor azul.</p>
+
+<p class="texto-centralizado">Este texto é centralizado.</p>
+
+<p class="texto-sublinhado">Este texto é sublinhado.</p>
+
+<p class="texto-maiusculas">Este texto é transformado em maiúsculas.</p>
+
+<p class="sombra-texto">
+    Este texto possui sombra, adicionando profundidade.
+</p>
+
+<p class="espacamento-letras">Espacamento personalizado entre letras.</p>
+
+<p class="espacamento-palavras">Espacamento aumentado entre letras.</p>
+
+<!--Seletor de tipo/tag-->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<!--Este exemplo é de um recurso mais avancado, que veremos ao longo do ebook-->
+<div class="cabecalho-sticky">Cabecalho Sticky</div>
+
+<!--Seletor por classe-->
+<p class="destaque">Este parágrafo será destacado.</p>
+
+<p>Este paragrafo não será destacado.</p>
+
+<p class="destaque">Este parágrafo será destacado.</p>
+
+<p class="texto-grande texto-azul">Este parágrafo será grande e azul.</p>
+
+<!--seletores de id-->
+<h1 id="cabecalho-principal">Bem vindo ao meu site</h1>
+
+<!--Seletor por atributo-->
+<input type="text" placeholder="Campo de texto com borda azul"/>
+
+<div>
+    <a href="http://example.com">Link externo (http)</a><br />
+    <a href="https://example.com">Link externo (https)</a><br />
+    <a href="/internal-link">Link interno</a>
+</div>
+
+<div data-status="ativo">Este div está ativo e tem um fundo verde.</div>
+<div data-status="inativo">
+    Este div está inativo e não tem um fundo verde.
+</div>
+
+<!--Especifidade-->
+<h4 style="color:green" class="special-header">Olá, mundo!</h4>
+
+<!--important-->
+<p class="texto-azul texto-azul-important">
+    Este texto deve ser azul, mas com o !important vira vermelho
+</p>
+
+<!--Unidades absolutas-->
+<p class="paragrafo-absoluto">Texto com tamanho absoluto em pixels.</p>
+
+<p class="paragrafo-ponto">
+    Texto com tamanho em pontos, adequado para documentos impressos.
+</p>
+
+<div class="caixa-polegada">Caixa de 2 polegadas por 1 polegada</div>
+
+<div class="caixa-centimetro">Caixa de 5cm por 2cm</div>
+
+<div class="caixa-centimetro">Caixa de 5cm por 2cm</div>
+
+<div class="caixa-milimetro">Caixa de 50mm por 20mm</div>
+
+<div class="container">
+    <p class="texto-em">
+    este texto é 1.5 vezes maior que o tamanho da fonte do seu elemento pai
+    </p>
+</div>
+
+<p class="texto-rem">
+    Este texto é 2 vezes maior que o tamanho da fonte do elemento raiz.
+</p>
+
+<div class="container">
+    <div class="caixa-percentual">
+        Esta caixa ocupa 50% da largura do seu container.
+    </div>
+</div>
+
+<div class="div-vh">Esta div ocupa 50% da altura da viewport.</div>
+
+<div class="div-vw">Esta div ocupa 80% da altura da viewport.</div>
+
+<!-- RGB, HEX, HSL-->
+<div class="cor-rgb">
+    Texto em vermelho com fundo azul semi-transparente.
+</div>
+
+<div class="cor-hex">Texto verde com fundo vermelho</div>
+
+<div class="cor-hsl">
+    Texto em verde escuro com fundo azul semi-transparente.
+</div>
+
+<!-- imagens de fundo: inserção e controle em CSS-->
+<div class="fundo-imagem"></div>
+
+<div class="fundo-tamanho"></div>
+
+<div class="fundo-posicao"></div>
+
+<div class="fundo-repetir"></div>
+
+<!--Box Model-->
+<div class="caixa"></div>
+
+<div class="container">
+    <div class="caixa-relativa">Conteudo</div>
+</div>
+
+<div class="margem-topo">Margem apenas no topo.</div>
+<div class="margem-direita">Margem apenas á direita.</div>
+<div class="margem-baixo">Margem apenas embaixo.</div>
+<div class="margem-esquerda">Margem apenas á esquerda.</div>
+
+<div class="margem-colapso">Primeiro elemento com margem inferior.</div>
+<div class="margem-colapso">
+    Segundo elemento com margem superior (colapso)
+</div>
+<div class="margem-negativa">Elemento com margem negativa superior.</div>
+
+<div class="borda-simples">Este elemento tem uma borda solida azul.</div>
+
+<div class="borda-individual">
+    Cada borda deste elemento tem um estilo diferente.
+</div>
+
+<div class="borda-arredondada">Este elemento tem bordas arredondadas.</div>
+
+<div class="borda-efeito"></div>
+
+<div class="caixa-padding">Conteúdo com padding uniforme.</div>
+
+<div class="padding-individual">Conteúdo com padding infividual</div>
+
+<div class="padding-relativo">Conteúdo com padding relativo</div>
+
+<!--Comportamento de exibição dos elementos com display-->
+<div class="block-elemento">Div de bloco #1</div>
+<span class="block-elemento">Span de bloco #2</span>
+<p class="block-elemento">Paragrafo de bloco #3</p>
+
+<p>
+    Texto normal seguido por um
+    <span class="inline-elemento">span inline</span>, outro
+    <span class="inline-elemento">span inline</span>, e um
+    <a href="#" class="inmline-elemento"> link inline</a>.
+</p>
+
+<div class="inline-block-elemento">Bloco 1</div>
+<div class="inline-block-elemento">Bloco 2</div>
+<div class="inline-block-elemento">Bloco 3</div>
+
+<div>Este elemento será exibido.</div>
+<div class="esconder-elemento">
+    Este elemento está oculto e não ocupa espaço.
+</div>
+<div>este elemento também será exibido e ficara diretamente abaixo do primeiro elemento visivel
+</div>
+
+<div class="visivel">Este elemento é visivel.</div>
+<div class="escondido">
+    você não pode me ver, mas meu espaço ainda está reservado.
+</div>
+<div class="visivel">
+    Eswte elemento também é visivel e aparece logo apos o espaço do elemento oculto.
+</div>
+
+<!--Position - Posicionamento de elementos-->
+<div class="elemento-static">Primeiro Elemento</div>
+<div class="elemento-static">Segundo Elemento</div>
+
+<div class="elemento-relativo">
+    Eu sou um elemento posicionado de forma relativa!
+</div>
+
+<div class="container-relativo">
+    Eu sou um conêiner relativo.
+    <div class="elemento-absoluto">Eu sou absolutamente posicionado.</div>
+</div>
+
+<div class="barra-navegacao"> Barra de navegaçao fixa</div>
+
+<!--Z index-->
+<div class="index-container">
+    <div class="fundo"> Elemento de fundo</div>
+    <div class="frente">Elemento de frente</div>
+</div>
+</body>
+</html>
